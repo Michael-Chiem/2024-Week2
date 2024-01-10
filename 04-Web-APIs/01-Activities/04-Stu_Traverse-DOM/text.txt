@@ -1,0 +1,17 @@
+simply apply white color to welcome to world news header and change the art-title fontsize on the to 50px
+
+<header id="header">
+    <h1>Welcome to World News</h1>
+    <h2>Here is Your Daily Update</h2>
+  </header>
+
+// Access element using id
+var articlesDiv = document.getElementById('articles');
+var headerDiv = document.getElementById('header');
+
+// Change style by accessing style object's properties
+articlesDiv.children[2].style.fontSize = '50px';
+headerDiv.style.color = 'white';
+
+
+please use it with traverse DOM properties
