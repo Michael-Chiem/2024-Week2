@@ -21,8 +21,14 @@ site3El.children[1].children[0].setAttribute("alt", "women working");
 site3El.children[1].children[0].setAttribute("style", "padding:10px;");
 
 // Write Your Code Below
-// Select all the <h4> elements and set the desired styles
-document.querySelectorAll('.sites h4').forEach(h4 => Object.assign(h4.style, { color: 'blue', fontSize: '30px', fontWeight: 'bold' }));
 
-// Select the <h1> element and set padding and margin
-Object.assign(document.querySelector('h1').style, { paddingLeft: '10px', margin: '0' });
+document.querySelectorAll('h4').forEach(function (h4) {
+    h4.style.color = 'blue';
+    h4.style.fontSize = '30px';
+    h4.style.fontWeight = 'bold';
+  });
+  
+var h1Element = document.querySelector('h1');
+h1Element.style.paddingLeft = '100px';
+h1Element.style.margin = '0';
+
