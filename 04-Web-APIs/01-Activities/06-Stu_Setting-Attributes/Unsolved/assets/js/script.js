@@ -22,23 +22,13 @@ site3El.children[1].children[0].setAttribute("style", "padding:10px;");
 
 // Write Your Code Below
 
-// document.querySelectorAll('h4').forEach(function (h4) {
-//     h4.style.color = 'blue';
-//     h4.style.fontSize = '30px';
-//     h4.style.fontWeight = 'bold';
-//   });
-
 var h4tags = document.querySelectorAll("h4");
 for (var i = 0; i < h4tags.length; i++) {
-    h4tags[i].setAttribute("style", "color:blue; font-size: 30px");
-   }
-  
-// var h1Element = document.querySelector('h1');
-// h1Element.style.paddingLeft = '100px';
-// h1Element.style.margin = '0';
+    h4tags[i].setAttribute("style", "color: blue; font-weight: bold; font-size: 30px");
+}
 
 var h1tags = document.querySelector("h1");
-h1tags.setAttribute("style", "padding-left: 100px; margin: 0; color: red;");
+h1tags.setAttribute("style", "padding-left: 10px; margin: 0;");
 
 
 
