@@ -9,11 +9,18 @@ function countdown() {
   var timeLeft = 5;
 
   // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
-  var timeInterval = setInterval(function () {
-    //
-    // YOUR CODE HERE
-    //
-  });
+  var timerInterval = setInterval(function() {
+    timeLeft--;
+    timerEl.textContent = timeLeft + " Time left.";
+
+    if(timeLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timerInterval);
+      // Calls function to create and append image
+      displayMessage();
+    }
+
+  }, 1000);
 }
 
 // Displays the message one word at a time

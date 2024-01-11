@@ -46,7 +46,7 @@ sayBears();
 function singAlong() {
   var sing = "Sing";
   console.log(sing + ",");
-  var singASong = function () {  
+  function singASong  () {  
     console.log(sing + " a Song.");
    };
   singASong();
